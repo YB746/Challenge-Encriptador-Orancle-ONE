@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Encode</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fuente Google apis-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="caja">
+                <!-- logo-ojo -->
+                <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+                <lord-icon src="https://cdn.lordicon.com/tyounuzx.json" trigger="hover"
+                    colors="primary:#e7e5df,secondary:#44bba4" style="width:110px;height:135px">
+                </lord-icon>
+                <!-- logo-sombrero -->
+                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="64px" height="64px" version="1.1"
+                    style="shape-rendering:geometricPrecision; position:absolute; left: 23px; top: 10%; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                    viewBox="0 0 512 512" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <defs>
+                        <style type="text/css">
+                            .fil1 {
+                                fill: #393E41
+                            }
+
+                            .fil0 {
+                                fill: #E7E5DF
+                            }
+
+                            .fil2 {
+                                fill: #E7E5DF
+                            }
+                        </style>
+                    </defs>
+                    <g id="Layer_x0020_1">
+                        <metadata id="CorelCorpID_0Corel-Layer" />
+
+                        <path class="fil0"
+                            d="M256 383c-74,0 -196,-15 -242,-65 -3,23 24,46 68,62 96,35 252,35 348,0 44,-16 70,-39 68,-62 -46,50 -168,65 -242,65zm-236 -80c12,17 41,33 80,45 91,28 221,28 312,0 39,-12 68,-28 80,-45 -11,-16 -36,-32 -73,-44 5,31 7,54 7,55 0,3 -2,6 -6,7 -30,6 -60,11 -89,14 -5,2 -2,1 -6,1 -1,0 -41,4 -47,3 -10,0 -19,0 -29,0 -21,0 -41,0 -62,-2 -4,0 -1,1 -6,-1 -30,-3 -61,-8 -90,-15 -3,-1 -5,-4 -5,-7 0,-1 2,-24 7,-55 -36,12 -62,28 -73,44zm236 117c-68,0 -131,-10 -179,-27 -50,-19 -77,-44 -77,-72 0,-40 56,-65 95,-77 11,-63 29,-125 58,-145 10,-7 21,-9 33,-6 0,0 1,1 1,1 50,28 88,28 138,0 0,0 1,-1 1,-1 48,-11 72,60 86,128 2,8 3,16 5,23 39,12 95,37 95,77 0,28 -27,53 -77,72 -48,17 -111,27 -179,27zm-147 -173c0,2 0,4 -1,6 -1,6 -2,12 -3,18 49,9 73,14 129,15 44,1 90,-2 137,-9l36 -7c-1,-5 -2,-11 -3,-17 -1,-2 -1,-4 -1,-6 -9,-54 -26,-118 -52,-136 -7,-5 -13,-6 -20,-4 -54,29 -96,29 -150,0 -7,-2 -13,-1 -20,4 -26,18 -43,82 -52,136zm-9 62c11,2 21,4 31,6l0 -25c-9,-1 -19,-3 -28,-5 -1,9 -2,17 -3,24zm45 8c11,2 22,4 33,5l0 -25c-11,-1 -22,-3 -33,-4l0 24zm47 6c11,1 22,4 33,5l0 -25c-11,-1 -22,-3 -33,-4l0 24zm47 2c11,1 22,2 33,2l0 -25c-11,0 -22,-1 -33,-2l0 25zm48 -1c11,0 22,-1 33,-2l0 -25 -34 1 0 24zm48 -1c11,0 22,0 34,0l0 -25 -34 1 0 24zm47 -3c11,-2 22,-3 33,-5l0 -24c-11,1 -22,3 -33,4l0 25zm47 -7c10,-2 20,-3 30,-5 0,-7 -1,-16 -2,-25 -10,2 -19,4 -28,5l0 25z" />
+                        <path class="fil1"
+                            d="M234 286c44,1 90,-2 137,-9l36 -7c-1,-5 -2,-11 -3,-17 -1,-2 -1,-4 -1,-6 -9,-54 -26,-118 -52,-136 -7,-5 -13,-6 -20,-4 -54,29 -96,29 -150,0 -7,-2 -13,-1 -20,4 -26,18 -43,82 -52,136 0,2 0,4 -1,6 -1,6 -2,12 -3,18 49,9 73,14 129,15z" />
+                        <path class="fil1"
+                            d="M420 321c-30,6 -60,11 -89,14 -5,2 -2,1 -6,1 -1,0 -41,4 -47,3 -10,0 -19,0 -29,0 -21,0 -41,0 -62,-2 -4,0 -1,1 -6,-1 -30,-3 -61,-8 -90,-15 -3,-1 -5,-4 -5,-7 0,-1 2,-24 7,-55 -36,12 -62,28 -73,44 12,17 41,33 80,45 91,28 221,28 312,0 39,-12 68,-28 80,-45 -11,-16 -36,-32 -73,-44 5,31 7,54 7,55 0,3 -2,6 -6,7z" />
+                        <path class="fil2"
+                            d="M498 318c-46,50 -168,65 -242,65 -74,0 -196,-15 -242,-65 -3,23 24,46 68,62 96,35 252,35 348,0 44,-16 70,-39 68,-62z" />
+                        <path class="fil2" d="M381 314c10,-2 20,-3 30,-5 0,-7 -1,-16 -2,-25 -10,2 -19,4 -28,5l0 25z" />
+                        <path class="fil2" d="M367 316l0 -24c-11,1 -22,3 -33,4l0 25c11,-2 22,-3 33,-5z" />
+                        <path class="fil2" d="M320 322l0 -25c-11,1 -22,2 -33,3l0 24c11,0 22,-1 33,-2z" />
+                        <path class="fil2" d="M273 325l0 -25 -34 1 0 24c11,1 23,0 34,0z" />
+                        <path class="fil2" d="M225 325l0 -25c-11,0 -22,-1 -33,-2l0 25c11,1 22,2 33,2z" />
+                        <path class="fil2" d="M178 322l0 -25c-11,-1 -22,-3 -33,-4l0 24c11,2 22,4 33,5z" />
+                        <path class="fil2" d="M131 315l0 -25c-9,-1 -19,-3 -28,-5 -1,9 -2,17 -3,24 11,2 21,4 31,6z" />
+                    </g>
+                </svg>
+            </div>
+        </nav>
+    </header>
+
+
+    <main style="padding: 10%;">
+        <div class="wrapper">
+            <div class="typing-demo">Encode</div>
+        </div>
+        <br>
+        <br>
+        <div style="display: flex; justify-content: space-between;">
+            <textarea name="texto" id="texto" class="ingresar" cols="30" rows="10" placeholder="Ingresa el texto aquí"
+                required></textarea>
+
+            <div class="resultado" style="position: relative;">
+                <div id="imagenContenedor">
+                    <img src="search-768328_1280-removebg-preview.png" alt="Imagen" id="imagen">
+                    <p id="mensaje" style="text-align: center; position: absolute; bottom: 0; width: 100%; margin: 0;">
+                        Ningún mensaje fue encontrado</p>
+                </div>
+                <p id="textoEncriptado" style="display: none;"></p>
+            </div>
+        </div>
+
+        <br>
+
+        <div style="display: flex; justify-content: space-between;">
+            <div class="botones">
+                <input id="encriptar" type="submit" name="encriptar" value="Encriptar" onclick="encriptarTexto(event)">
+                <input id="desencriptar" type="submit" name="desencriptar" value="Desencriptar"
+                    onclick="desencriptarTexto(event)">
+            </div>
+
+            <div>
+                <button id="btnCopiar" onclick="copiar(event)">Copiar</button>
+            </div>
+        </div>
+    </main>
+    <script>
+        function copiar(event) {
+            event.preventDefault();
+            var resultadoEncriptado = document.getElementById("textoEncriptado").textContent;
+
+            var elementoTemporal = document.createElement("textarea");
+            elementoTemporal.value = resultadoEncriptado;
+            document.body.appendChild(elementoTemporal);
+
+            elementoTemporal.select();
+            document.execCommand("copy");
+            document.body.removeChild(elementoTemporal);
+
+            Swal.fire({
+                icon: "success",
+                title: "¡Copia exitosa!",
+                text: "El resultado se ha copiado al portapapeles.",
+            });
+        }
+
+        function encriptarTexto(event) {
+            event.preventDefault();
+            const texto = obtenerTextoValido();
+            if (texto) {
+                const encriptado = encriptar(texto);
+                document.getElementById('textoEncriptado').textContent = encriptado;
+                mostrarResultado();
+                ocultarImagen();
+            }
+        }
+
+        function desencriptarTexto(event) {
+            event.preventDefault();
+            const texto = obtenerTextoValido();
+            if (texto) {
+                const desencriptado = desencriptar(texto);
+                document.getElementById('textoEncriptado').textContent = desencriptado;
+                mostrarResultado();
+                ocultarImagen();
+            }
+        }
+
+        function obtenerTextoValido() {
+            const texto = document.getElementById('texto').value;
+            const textoFormateado = texto.replace(/[^a-z]/g, '').toLowerCase();
+            if (textoFormateado !== texto) {
+                Swal.fire({
+                icon: "error",
+                title: "Error de datos",
+                text: "El texto solo puede contener letras minúsculas sin acentos.",
+            });
+            }
+            return textoFormateado;
+        }
+
+        function encriptar(texto) {
+            let encriptado = texto.toLowerCase();
+            encriptado = encriptado.replace(/e/g, 'enter');
+            encriptado = encriptado.replace(/i/g, 'imes');
+            encriptado = encriptado.replace(/a/g, 'ai');
+            encriptado = encriptado.replace(/o/g, 'ober');
+            encriptado = encriptado.replace(/u/g, 'ufat');
+            return encriptado;
+        }
+
+        function desencriptar(texto) {
+            let desencriptado = texto.toLowerCase();
+            desencriptado = desencriptado.replace(/enter/g, 'e');
+            desencriptado = desencriptado.replace(/imes/g, 'i');
+            desencriptado = desencriptado.replace(/ai/g, 'a');
+            desencriptado = desencriptado.replace(/ober/g, 'o');
+            desencriptado = desencriptado.replace(/ufat/g, 'u');
+            return desencriptado;
+        }
+
+        function mostrarResultado() {
+            document.getElementById('textoEncriptado').style.display = 'block';
+            document.getElementById('mensaje').style.display = 'none';
+        }
+
+        function ocultarImagen() {
+            document.getElementById('imagenContenedor').style.display = 'none';
+            document.getElementById('mensaje').style.display = 'block';
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+</body>
+
+</html>
